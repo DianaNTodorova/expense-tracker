@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+  background: linear-gradient(to right, #0c3b30, #071e1a);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 30rem;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+.form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Balance & Expenses */
+.text-primary {
+  color: #4caf50 !important;
+}
+
+.text-danger {
+  color: #e53935 !important;
+}
+
+/* Expense List */
+.expense-list {
+  background: transparent;
+}
+/* Classes for the expense cards*/
+
+/* General Button Styling */
+.btn-income,
+.btn-expense {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #f4d03f; /* Pale yellow border */
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  /*padding: 12px 20px;*/
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+.btn-danger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  padding: auto;
+  margin: auto;
+  width: 2rem;
+  height: 2rem;
+}
+.btn-expense {
+  height: 44px;
+}
+/* Hover Effect with Glow */
+.btn-income:hover,
+.btn-expense:hover {
+  background: none; /* linear-gradient(to right, #27ae60, #219150);*/
+  transform: scale(1.05);
+  border: 1px solid #f4d03f !important;
+  box-shadow: 0px 0px 15px rgba(244, 208, 63, 0.8); /* Glowing pale yellow */
+}
+
+/* Circular "+" Button */
+.circle-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid #f4d03f; /* Pale yellow border */
+}
+
+/* Fix Add Expense Button */
+.btn-expense {
+  width: 100%; /* Full width to align with input fields */
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
